@@ -8,11 +8,12 @@ html{
 
 body{
     margin: 0;
+    font-family: 'Secular One', sans-serif;
+    overflow: hidden;
 }
 
 p{
     font-size: 1.3em;
-    font-family: sans-serif
 }
 
 button{
@@ -76,13 +77,12 @@ header a:hover{
     background-position: center center;
     width: 600px;
     height: 400px;
-}
-
-.img-container{
+    z-index: 1;
     top:200px;
-    position:relative
-
+    position:relative;
 }
+
+
 
 #hero .container{
     display: flex;
@@ -102,9 +102,37 @@ header a:hover{
 }
 
 #hero img{
-    width: 60px;
-    top: 60px;
-    position: absolute;
+    height: 25px;
+    top: 600px;
+    position: fixed;
+    margin-left: 20px;
 }
+
+/*cuadrado 1*/
+
+#hero .cuadrado1{
+    background-color: black;
+    position: absolute;
+    width: 900px;
+    height: 89px;
+    transform: rotate(120deg);
+    left: -300px;
+    opacity: 0.2;
+    
+    
+}
+
+#hero .cuadrado2{
+    background-color: black;
+    position:absolute;
+    width: 1090px;
+    height: 200px;
+    transform: rotate(120deg);
+    left: -240px;
+    opacity: 0.2;
+  
+}
+
+
 
 
